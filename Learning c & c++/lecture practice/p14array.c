@@ -9,7 +9,7 @@ int main()
         scanf("%d", &a[i]);
         sum += a[i];
     }
-    printf("Average marks of 10 students: %d", sum / 10);
+    printf("Average marks of 10 students: %f", sum*0.1);
 
     return 0;
 }
