@@ -1,16 +1,17 @@
 #include <stdio.h>
-void printArray(int arr[], int size) {
-for (int i = 0; i < size; i++) {
-printf("%d ", arr[i]);
-}
-printf("\n");
-}
-int main() {
-int myArray[] = {1, 2, 3, 4, 5};
-printf("%d\n",sizeof(myArray));
-printf("%d\n", sizeof(myArray[0]));
-int length = sizeof(myArray) / sizeof(myArray[0]);
-
-printArray(myArray, 4);
-return 0;
+int main()
+{
+    char ch;
+    printf("Enter a character :");
+    scanf("%c", &ch);
+    printf("%c\n", ch);
+    if (ch >= '0' && ch <= '9')
+    {
+        printf("character is a digit");
+    }
+    else
+    {
+        printf("character is not a digit");
+    }
+    return 0;
 }
