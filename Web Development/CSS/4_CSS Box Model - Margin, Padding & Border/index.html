@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: pink;
+        }
+
+        /* Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin */
+        /* Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin */
+
+        .box1 {
+            color: black;
+            /* Enter 'p:10' and then press enter */
+            padding: 10px;
+            /* Enter 'm:5' and then press enter */
+            margin: 10px;
+            border: 5px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+
+        .box2 {
+            color: green;
+            padding: 10px;
+            margin: 10px;
+            border: 5px black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">i am a div</div>
+    <div class="box box2">i am another div</div>
+</body>
+
+</html>

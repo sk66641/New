@@ -1,0 +1,8 @@
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+print("sum:", num1+num2)
+print("difference:", num1-num2)
+print("multiplication:", num1*num2)
+print("divison:", num1/num2)
+print("integer divison:", num1//num2)
+print("modulus:", num1 % num2)

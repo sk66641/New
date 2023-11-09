@@ -8,6 +8,6 @@ int main()
     gets(s2);
     strcat(s1, s3);
     // printf("%s", strcat(s1,s2));
-    puts((strcat(s1 , s2)));
+    puts((strcat(s1, s2)));
     return 0;
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: yellow;
+    }
+
+    /* Element Selector */
+    div {
+        color: pink;
+        background-color: blue;
+    }
+
+    /* Class Selector */
+    .red {
+        color: red;
+        background-color: yellow;
+    }
+
+    /* Id Selector */
+    #green {
+        color: indianred;
+    }
+
+    /* Child Selector */
+    div>p {
+        color: green;
+        background-color: grey;
+    }
+
+    /* Descendant Selector */
+    div p {
+        color: hotpink;
+        background-color: blueviolet;
+    }
+
+    /* Universal Selector */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited {
+        color: green;
+    }
+
+    a:link {
+        color: brown;
+    }
+
+    a:active {
+        color: fuchsia;
+    }
+
+    a:hover {
+        background-color: red;
+    }
+
+    p:first-child {
+        color: darkred;
+    }
+</style>
+
+<body>
+    <main>
+        <p>i am a paragraph inside main i.e i am first child</p>
+    </main>
+    <div class="red">
+        it's a div
+    </div>
+    <div id="green">
+        it's another div
+    </div>
+    <div>
+        <p>i am a paragraph inside div</p>
+    </div>
+    <div>
+        <article>
+            <p>i am a paragraph inside article which is inside div</p>
+        </article>
+    </div>
+    <a href="https://www.google.com" target="_blank">Go to google</a>
+    <a href="https://www.facebook.com" target="_blank">Go to facebook</a>
+</body>
+
+</html>

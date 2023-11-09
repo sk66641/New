@@ -9,10 +9,10 @@ int main()
         printf("* ");
     }
     printf("\n");
-    for (int i = 2; i <= n - 1; i++)
+    for (int i = 1; i <= n - 2; i++)
     {
         printf("*");
-        for (int i = 2; i <= (2*n)-2; i++)
+        for (int i = 1; i <= (2*n)-3; i++)
         {
             printf(" ");
         }

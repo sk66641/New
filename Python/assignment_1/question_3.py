@@ -1,0 +1,5 @@
+print("Enter principle , rate and time to calculate simple interest:")
+principle=float(input("principle: "))
+rate=float(input("rate: "))
+time=float(input("time: "))
+print("simple interest:",principle*rate*time*0.01)
