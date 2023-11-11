@@ -1,9 +1,10 @@
-# Function to print the pattern
-def print_pattern(n):
-    for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            print(max(n - min(i, j, n - i + 1, n - j + 1) + 1, 1), end=" ")
-        print()
+n = int(input("Enter the number of rows or cols: "))
+for i in range(n):
+    for j in range(n):
+        value = min(i, j)
+        value = min(value, n - i - 1)
+        value = min(value, n - j - 1)
+        print(n - 3 - value, end=" ")
+    print()
 
-# Call the function with the desired size of the pattern (in this case, 7x7)
-print_pattern(7)
+
