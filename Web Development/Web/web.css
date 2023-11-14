@@ -1,6 +1,21 @@
-body{
-    background-color:yellow;
+body {
+    background-color: yellow;
 }
-h1{
+
+h1 {
+    color: red;
+}
+a:hover{
+    background-color: pink;
+}
+a:visited {
+    color: green;
+}
+
+a:link {
+    color: blue;
+}
+
+a:active {
     color: red;
 }
