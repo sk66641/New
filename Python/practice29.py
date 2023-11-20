@@ -7,5 +7,5 @@ while row <= n:
         print(ch, end=" ")
         col += 1
     print()
-    row += 1
+    row += 1 
 
