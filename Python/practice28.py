@@ -1,0 +1,6 @@
+t=('abc', 'def','ghi')
+print(t)
+print(t[1:])
+print(t[1])
+print(t[-1])
+t.insert(0, 1)
