@@ -1,5 +1,6 @@
 # Looping/Iterating Tuple
 # You can loop through the tuple items by using a for loop.
+# sourcery skip: aug-assign, while-to-for
 tup = ("apple", "banana", "cherry")
 for x in tup:
     print(x)
