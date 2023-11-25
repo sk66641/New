@@ -1,9 +1,9 @@
 a=int(input('enter a:'))
 b=int(input('enter b:'))
 c=int(input('enter c:'))
-x=(a>b)?a:b
 print(x)
-if a>b and b>c:
+if a>=b and b>=c:
+    
     print(a,'is greatest.')
 elif b>a and b>c:
     print(b,'is greatest.')
