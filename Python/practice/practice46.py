@@ -12,8 +12,6 @@ a = " Hello, World! "
 print(a.strip())
 # splitting a string
 print(a.split('d'))
-del a
-print(a)
 print()
 a='editor is here'
 # here space is not letters that's why output is false
