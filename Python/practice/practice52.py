@@ -1,8 +1,14 @@
-class Student:
-    sname = ""
+class Student12:
+    def __init__(self, sn):
+        self.sname = sn
+        
     def setSName(self, sn):
         self.sname = sn
 
-s1 = Student12()
-s1.setSName("Omar")
-print(s1.sname)
+    def getSName(self):
+        return self.sname
+
+s1 = Student12("Eman")
+print(s1.getSName())
+s1.setSName("Eman2")
+print(s1.getSName())
