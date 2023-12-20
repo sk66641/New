@@ -1,19 +1,16 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-struct {
-    int roll;
-    string name;
-    char section;
-}myStructure;
-myStructure.roll=48;
-myStructure.name="Sanu Kumar";
-myStructure.section='A';
-cout << myStructure.roll << endl;
-cout << myStructure.name << endl;
-cout << myStructure.section << endl;
-
-
+    int amount;
+    cout << "Amount: ";
+    cin >> amount;
+    int account = 0, value;
+    while (amount >= 25)
+    {
+        value = amount * 0.67;
+        account = account + value;
+        amount = amount * 0.27;
+    }
+    cout << "Account: " << account << endl;
 }
