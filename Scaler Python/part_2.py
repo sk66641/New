@@ -53,3 +53,15 @@ print("#ord and chr in python")
 # ord() returns the ASCII value of a single character while chr() returns the character that represents the specified unicode.
 print(ord('a'))
 print(chr(97))
+
+
+print("#string slicing")
+# syntax : variable_name[start:end:jump] and by default jump is +1
+name = "sanu kumar"
+# this will print whole string
+print(name[:])
+print(name[::])
+print(name[:len(name)])
+print(name[::-2])
+print(name[::-1])
+print(name[-1:-(len(name)+1):-1])
