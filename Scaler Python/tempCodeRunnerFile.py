@@ -1,1 +1,1 @@
-ord
+fruits.pop("apple")

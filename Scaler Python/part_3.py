@@ -31,25 +31,25 @@ print("my name is {} and age is {}".format(name, age))
 print(f"my name is {name} and age is {age}")
 
 print("#string concatenation")
-first="sanu"
-last="kumar"
+first = "sanu"
+last = "kumar"
 print(first+last+first+last)
 print((first+last)*2)
 
 print("#printing all vowels from: the quick brown fox jumps over the lazy dog")
-string="the quick brown fox jumps over the lazy dog"
+string = "the quick brown fox jumps over the lazy dog"
 for i in string:
     if i in "aeiou":
-        print(i,end="")
+        print(i, end="")
 print()
 
 print("#find if a string is pallindrome or not")
 # using string slicing
-string=input()
-if string==string[::-1]:
-    print(string,"is a pallindrome.")
+string = input()
+if string == string[::-1]:
+    print(string, "is a pallindrome.")
 else:
-    print(string,"is not a pallindrome")
+    print(string, "is not a pallindrome")
 print("#another method")
 string = input()
 j = 0
@@ -58,7 +58,7 @@ for i in string:
     if i != string[-j]:
         break
 print(j)
-if j!=len(string):
+if j != len(string):
     print("Not a pallindrome")
 else:
     print("pallindrome")

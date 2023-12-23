@@ -13,6 +13,11 @@ print(type(b))
 print(int(b))
 print(b)
 
+print("#range")
+print(type(range(10)))
+a, b, c = range(0, 6, 2)
+print(a, b, c)
+
 print("#Multi line string")
 print("""sanu
         kumar""")
@@ -29,4 +34,3 @@ x = input("x:")
 # by default it will take input as a string
 y = input("y:")
 print(x+y)
-
