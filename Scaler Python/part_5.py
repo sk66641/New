@@ -116,3 +116,41 @@ def get_unique(li):
     return [i for i in li if li.count(i)==1]
 print(lst)
 print(get_unique(lst))
+
+print("#default arguments")
+def intro(name,age="18"):
+    print("my name is ",name)
+    print("my age is ",age)
+intro("sanu")
+intro("mahesh",25)
+
+# print("#default follows non-default otherwise it'll give an error")
+# def intro(name="sanu",age):
+#     print("my name is ",name)
+#     print("my age is ",age)
+# intro(18)
+
+print("#arbitary arguments")
+# when number of values you want to pass is not known.
+# The values are being stored in tuple.
+def arg(*args):
+    print(args,type(args))
+    for i in args:
+        print(i*2,end=" ")
+arg(2,3,"sanu ",True,"kumar")
+
+print("#keyword arguments")
+# it stores the data in dictionary format
+def dic(**kwargs):
+    print(kwargs,type(kwargs))
+    for i in kwargs:
+        print(i,kwargs[i],sep=" : ")
+    for k,v in kwargs.items():
+        print(k,v,sep=" : ")
+dic(name="sanu",age="18",state="bihar")
+# kwargs follow args otherwise it will give an error
+def mix(name,state,age="18",*args,**kwargs):
+    print(name,age,state,kwargs,args,sep=" , ")
+mix("sanu","bihar")
+mix("sanu","bihar",25)
+mix("sanu","bihar",25,5,4,8,district="nalanda",hobby="sleeping")
