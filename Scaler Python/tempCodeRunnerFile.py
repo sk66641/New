@@ -1,1 +1,1 @@
-sent.split("b")
+i not in li

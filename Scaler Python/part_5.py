@@ -87,3 +87,32 @@ lst.sort(key=srt)
 print(lst)
 lst.sort(key=lambda x:x[1])
 print(lst)
+
+print("#printing all even numbers from a given list using python function")
+lst=[1,14,13,57,6,89,8]
+print(lst)
+def get_even(l):
+    return [i for i in l if i%2==0]
+print(get_even(lst))
+
+print("#write a python function that takes a list and returns a new list with unique elements of the first list")
+lst=[25,2,4,56,25,4,8]
+def get_unique(li):
+    return list(set(li))
+print(lst)
+print(get_unique(lst))
+# another method
+def get_unique(li):
+    new_li=[]
+    for i in li:
+        if i not in new_li:
+            new_li.append(i)
+    return new_li
+print(lst)
+print(get_unique(lst))
+
+print("#write a python function that takes a list and returns a new list with elements having count 1")
+def get_unique(li):
+    return [i for i in li if li.count(i)==1]
+print(lst)
+print(get_unique(lst))
