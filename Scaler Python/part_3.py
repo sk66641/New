@@ -1,4 +1,5 @@
 print("#string methods")
+# string is unmutable
 
 print("#capitalize")
 name = "sanu kumar"

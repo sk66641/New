@@ -1,1 +1,1 @@
-fruits.pop("apple")
+sent.split("b")

@@ -120,9 +120,9 @@ print("#dictionary")
 # creating an empty dictionary
 d = {}
 d = dict()
-# dictionaries are ordered in higher version of python, mutable, iterable and can contain different data types
+# dictionaries are ordered in higher version of python, mutable, iterable, don't allow duplicates and can contain different data types
 fruits = {"apple": 120, "orange": 80, "banana": 150}
-print(fruits, type(fruits))
+print(len(fruits), fruits, type(fruits))
 # zip method
 name = ["apple", "orange", "banana"]
 prices = [120, 80, 150]
@@ -158,7 +158,7 @@ print("#check element availability")
 print("apple" in fruits)
 
 print("#deletion operations")
-fruits.pop("apple")
+fruits.pop("banana")
 print(fruits)
 # popitem removes and returns last element of a dictionary
 print(fruits.popitem())
@@ -171,6 +171,78 @@ print("#iteration in dictionary")
 for i in fruits:
     print(i, fruits[i])
 # method 2
+print(fruits.keys())
+print(fruits.values())
 print(fruits.items())
 for key, value in fruits.items():
     print(key, value)
+
+print("#take an input and find the freq of each letter and return the letter and their freq")
+name = "sanu kumar"
+freq = {}
+for i in name:
+    if i not in freq:
+        freq[i] = 1
+    else:
+        freq[i] += 1
+print(freq)
+
+print("#sets")
+# sets are mutable, iterable, unordered, unindexed don't allow duplicates and can contain different data types
+# creating an empty set
+s = set()
+print(s)
+# non-empty set
+s = {"s", "a", "n", "u", " ", "k", "u", "m", "a", "r"}
+print(s)
+s = set("sanu kumar")
+print(s)
+# iteration
+for i in s:
+    print(i)
+
+print("#update and delete operations")
+s = set(range(5))
+print(s)
+s.add("sanu kumar")
+print(s)
+# update add elements after iteration
+s.update("sanu kumar")
+print(s)
+# pop returns and removes any random element in set
+print(s.pop())
+print(s)
+# remove
+s.remove("u")
+print(s)
+
+print("#intersection")
+team1 = {42, 45, 85, 10, 78}
+team2 = {40, 10, 23, 85, 88}
+print(team1.intersection(team2))
+print(team2.intersection(team1))
+
+print("#union")
+print(team1.union(team2))
+print(team2.union(team1))
+
+print("#difference")
+print(team1.difference(team2))
+print(team2.difference(team1))
+
+print("#count the number of unique elements in a sentence")
+sent = "be the change you want to see in the world"
+sent_element = sent.split()
+print(sent_element)
+count = 0
+for i in sent_element:
+    if sent_element.count(i) == 1:
+        count += 1
+print(count)
+
+print("#count the total number of different elements in a sentence")
+sent = "be the change you want to see in the world"
+sent_element = sent.split()
+element_set = set(sent_element)
+print(element_set)
+print(len(element_set))
