@@ -188,7 +188,7 @@ for i in name:
 print(freq)
 
 print("#sets")
-# sets are mutable, iterable, unordered, unindexed don't allow duplicates and can contain different data types
+# sets are mutable, iterable, unordered, unindexed, don't allow duplicates and can contain different data types
 # creating an empty set
 s = set()
 print(s)
