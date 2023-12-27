@@ -23,12 +23,11 @@ class Solution:
         self.c = C
         if self.a >= self.b+self.c:
             return 1
-        else:
-            count = 1
-            while self.b+self.c > self.a:
-                self.c = self.b+self.c-self.a
-                count += 1
-            return count
+        count = 1
+        while self.b+self.c > self.a:
+            self.c = self.b+self.c-self.a
+            count += 1
+        return count
 solution = Solution()
 print(solution.solve(4, 3, 7))
 

@@ -68,10 +68,7 @@ z=lambda a,b:a+b
 print(z(7,3),type(z))
 # another example
 def smaller(a,b):
-    if a < b:
-        return a
-    else:
-        return b
+    return min(a, b)
 print(smaller(56,55))
 print((lambda a,b:a if a < b else b)(3,4))
 print((lambda a,b:min(a,b))(3,4))
